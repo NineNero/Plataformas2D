@@ -1675,6 +1675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465837892}
   - component: {fileID: 1465837893}
+  - component: {fileID: 1465837894}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -1730,9 +1731,21 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0, y: 0.06217575}
+  m_Size: {x: 0.6, y: 0.8756485}
   m_Direction: 0
+--- !u!114 &1465837894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465837891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e595a56d5cb17479406f441d941f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1563399772
 GameObject:
   m_ObjectHideFlags: 0
