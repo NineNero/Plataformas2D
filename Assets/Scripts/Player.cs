@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]private float _playerSpeed = 5;
+    [SerializeField]private float _jumpForce = 5;
     private float _playerInputH;
     //private float _playerInputV;
 
@@ -20,11 +21,18 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerMovement();
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
     }
 
     void FixedUpdate()
     {
-        _rBody2D.AddForce(new Vector2(_playerInputH * _playerSpeed, 0));
+        //_rBody2D.AddForce(new Vector2(_playerInputH * _playerSpeed, 0), ForceMode2D.Impulse);
+
+        _rBody2D.velocity = new Vector2(_playerInputH * _playerSpeed, _rBody2D.velocity.y);
     }
 
     void PlayerMovement()
@@ -33,5 +41,10 @@ public class Player : MonoBehaviour
         /*_playerInputV = Input.GetAxis("Vertical");
 
         transform.Translate(new Vector2(_playerInputH, _playerInputV) * _playerSpeed * Time.deltaTime);*/
+    }
+
+    void Jump()
+    {
+        _rBody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
     }
 }
