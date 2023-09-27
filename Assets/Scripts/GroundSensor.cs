@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class GroundSensor : MonoBehaviour
 {
+    private Animator _animator;
+    
     public bool _isGrounded;
+
+    void Start()
+    {
+        _animator = GameObject.Find("knight").GetComponent<Animator>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == 6)
         {
             _isGrounded = true;
+            
         }
     }
 
