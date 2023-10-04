@@ -6,7 +6,7 @@ public class GroundSensor : MonoBehaviour
 {
     private Animator _animator;
     
-    public bool _isGrounded;
+    public static bool _isGrounded;
 
     void Start()
     {
