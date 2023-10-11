@@ -13,13 +13,12 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _rBody2D;
     //private GroundSensor _sensor;
-    private Animator _animator;
+    [SerializeField] private Animator _animator;
 
     void Start()
     {
         _rBody2D = GetComponent<Rigidbody2D>();
         //_sensor = GetComponentInChildren<GroundSensor>();
-        _animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
