@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rBody2D;
     //private GroundSensor _sensor;
     [SerializeField] private Animator _animator;
+    [SerializeField] private PlayableDirector _director;
 
     void Start()
     {
@@ -28,6 +30,11 @@ public class Player : MonoBehaviour
         if(Input.GetButtonDown("Jump") && GroundSensor._isGrounded)
         {
             Jump();
+        }
+
+        if(Input.GetButtonDown("Fire2"))
+        {
+            _director.Play();
         }
     }
 

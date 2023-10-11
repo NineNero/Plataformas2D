@@ -279,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 516481088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.86, y: -1, z: -10}
+  m_LocalPosition: {x: -5.26, y: 0.16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7917,6 +7917,7 @@ MonoBehaviour:
   _playerSpeed: 5
   _jumpForce: 5
   _animator: {fileID: 1991835327}
+  _director: {fileID: 1342575543}
 --- !u!50 &1465837895
 Rigidbody2D:
   serializedVersion: 4
@@ -8027,7 +8028,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.6
+  orthographic size: 3.4901626
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8052,7 +8053,7 @@ Transform:
   m_GameObject: {fileID: 1563399772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.37, y: 0.25, z: -6.8629436}
+  m_LocalPosition: {x: -5.21, y: 0.25, z: -6.8629436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
