@@ -279,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 516481088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: 0.16, z: -10}
+  m_LocalPosition: {x: 3.5, y: -0.03999999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7828,6 +7828,8 @@ PlayableDirector:
     value: {fileID: 2106492522}
   - key: {fileID: -5834308900511042744, guid: c112ee71034370a4eb57c99e02fff936, type: 2}
     value: {fileID: 1465837896}
+  - key: {fileID: -7806587283646032901, guid: c112ee71034370a4eb57c99e02fff936, type: 2}
+    value: {fileID: 1465837897}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1465837891
@@ -7843,6 +7845,7 @@ GameObject:
   - component: {fileID: 1465837894}
   - component: {fileID: 1465837895}
   - component: {fileID: 1465837896}
+  - component: {fileID: 1465837897}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -7966,6 +7969,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1465837897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465837891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: cc360faae0773504a8a0a7d739ad2b53, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1465837894}
+          m_TargetAssemblyTypeName: Player, Assembly-CSharp
+          m_MethodName: SignalTest
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1563399772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8053,7 +8086,7 @@ Transform:
   m_GameObject: {fileID: 1563399772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1639934, y: 0.23313, z: -10}
+  m_LocalPosition: {x: 1.4171209, y: 0.64861, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
