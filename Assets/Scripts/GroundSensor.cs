@@ -8,7 +8,7 @@ public class GroundSensor : MonoBehaviour
     
     public static bool _isGrounded;
 
-    void Start()
+    void Awake()
     {
         _animator = GameObject.Find("knight").GetComponent<Animator>();
     }
@@ -18,7 +18,7 @@ public class GroundSensor : MonoBehaviour
         if(other.gameObject.layer == 6)
         {
             _isGrounded = true;
-            
+            _animator.SetBool("IsJumping", false);
         }
     }
 

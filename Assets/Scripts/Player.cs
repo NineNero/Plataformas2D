@@ -47,21 +47,30 @@ public class Player : MonoBehaviour
     {
         _playerInputH = Input.GetAxis("Horizontal");
 
-        if(_playerInputH != 0)
+        if(_playerInputH < 0)
         {
+            //_renderer.flipx = true;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             _animator.SetBool("IsRunning", true);
         }
 
-        if(_playerInputH == 0)
+        else if(_playerInputH > 0)
+        {
+            //_renderer.flipx = false;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            _animator.SetBool("IsRunning", true);
+        }
+
+        else
         {
             _animator.SetBool("IsRunning", false);
-        }  
+        }
+
     }
 
     void Jump()
     {
         _rBody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-
         _animator.SetBool("IsJumping", true);
     }
 }
