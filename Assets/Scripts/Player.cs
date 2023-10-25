@@ -83,6 +83,10 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        GameManager.instance.GameOver();
+        if(collider.gameObject.layer == 7)
+        {
+            GameManager.instance.GameOver();
+            SoundManager.instance.DeathSound();
+        }
     }
 }
